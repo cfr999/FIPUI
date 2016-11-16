@@ -5,14 +5,14 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
     
-    <com.mstar.tv.tvplayer.ui.holder.ImgTextButton
+    <com.kjd.flbui.ui.ImgTextButton
        android:id="@+id/btSource_channel"
        android:layout_width="wrap_content"
        android:layout_height="match_parent"
        android:layout_weight="1"
        android:gravity="center_horizontal|center_vertical"
       />
-    <com.mstar.tv.tvplayer.ui.holder.ImgTextButton
+    <com.kjd.flbui.ui.ImgTextButton
        android:id="@+id/btPicture_channel"
        android:layout_width="wrap_content"
        android:layout_height="match_parent"

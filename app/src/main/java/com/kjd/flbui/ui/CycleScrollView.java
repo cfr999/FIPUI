@@ -78,6 +78,7 @@
 
 package com.kjd.flbui.ui;
 
+import android.view.MotionEvent;
 import android.widget.ScrollView;
 
 import android.content.Context;
@@ -101,7 +102,11 @@ public class CycleScrollView extends ScrollView {
         super(context, attrs, defStyleAttr);
     }
 
-//    /**
+    @Override public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+    }
+
+    //    /**
 //     * This function has been override to provide cycle scroll ability
 //     *
 //     * @param event The key event to execute.
