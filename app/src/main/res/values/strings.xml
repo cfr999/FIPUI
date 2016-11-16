@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">FLBUI</string>
+
+    <!-- for Channel -->
+    <string name="str_cha_antannatype">Antenna Type</string>
+
+    <string name="str_cha_antannatype_none">None</string>
+    <string name="str_cha_antannatype_air">Air</string>
+    <string name="str_cha_antannatype_cable">Cable</string>
+
+    <string name="str_cha_channel">Channel</string>
+    <string name="str_cha_autotuning">Auto Tuning</string>
+    <string name="str_cha_dtvmanualtuning">DTV Manual Tuning</string>
+    <string name="str_cha_atvmanualtuning">ATV Manual Tuning</string>
+    <string name="str_cha_bandwidth_switch">Bandwidth Switch</string>
+    <string name="str_cha_bandwidth_uhf_7mhz">7MHz over UHF</string>
+    <string name="str_cha_programedit">Program Edit</string>
+    <string name="str_cha_signalinfo">Signal Information</string>
+    <string name="str_cha_ciinformation">CI Information</string>
+
+    <string name="str_lnbsetting_title">LNB Setting</string>
+
+
+    <string name="str_cha_cainformation">CA Information</string>
+    <string name="str_ca_title">CA Information</string>
+    <string name="str_ca_card_info">CA Information</string>
+    <string name="str_ca_card_management">CA Management</string>
+    <string name="str_ca_card_paired">Card Paired</string>
+    <string name="str_ca_card_feed">Card Feed</string>
+    <string name="str_ca_info_title">CA Card Information</string>
+    <string name="str_ca_info_entitle">CA Entitle Information</string>
+    <string name="str_ca_info_detitle">CA Detitle Information</string>
+    <string name="str_ca_info_purse_info">CA Slot Information</string>
+    <string name="str_ca_card_version">CAS Version Information</string>
+    <string name="str_ca_mg_title">CA Card Management</string>
+    <string name="str_ca_mg_modify_pin">Modify PIN Of CA Card</string>
+
+    <string name="str_cha_software_update_oad">Software Update (OAD)</string>
+
+    <string name="str_set_off">Off</string>
+
+    <string name="str_cha_time_to_search_for_ssu">Time to Search for SSU</string>
+    <string name="str_cha_time_to_search_for_ssu_default">4:00</string>
+    <string name="str_cha_oadscan">OAD Scan</string>
+    <string name="str_cha_oad_view_prompt">View Prompt to Update</string>
+
+    <string name="str_pic_picture_adjustment">Imageadjust</string>
+    <string name="str_pic_picture">Picture</string>
+    <string name="str_pic_picturemode">Picture Mode</string>
+
+
+    <string name="str_pic_contrast">Contrast</string>
+    <string name="str_pic_brightness">Brightness</string>
+    <string name="str_pic_color">Color</string>
+    <string name="str_pic_sharpness">Sharpness</string>
+    <string name="str_pic_hue">Hue</string>
+    <string name="str_pic_saturation">Saturation</string>
+    <string name="str_pic_backlight">Back Light</string>
+    <string name="str_pic_colortemperature">Color Temperature</string>
+
+    <string name="str_pic_pcimagemode">PC Image Mode</string>
+    <string name="str_pic_autotune">Auto Tune</string>
+    <string name="str_set_hdmicec_arc">HDMI_ARC</string>
+    <string name="str_pic_pcimagemode_waiting">PC image is adjusting, please try later...</string>
+    <string name="str_pic_pcimagemode_success">PC image adjusted success</string>
+    <string name="str_pic_pcimagemode_failed">PC image adjusted fail</string>
+
+    <string name="str_sound_soundmode">Sound Mode</string>
+    <string name="str_sound_bass">Low Pitch</string>
+    <string name="str_sound_treble">High Pitch</string>
+    <string name="str_sound_equalizer">Equilizer</string>
+    <string name="str_sound_equalizer120hz">120Hz</string>
+    <string name="str_sound_equalizer500hz">500Hz</string>
+    <string name="str_sound_equalizer1.5khz">1.5KHz</string>
+    <string name="str_sound_equalizer5khz">5KHz</string>
+    <string name="str_sound_equalizer10khz">10KHz</string>
+    <string name="str_sound_balance">Balance</string>
+    <string name="str_sound_avc">AVC</string>
+    <string name="str_sound_ad">AD Switch</string>
+    <string name="str_sound_ad_volume">AD Volume</string>
+    <string name="str_sound_autohoh">Auto HOH</string>
+    <string name="str_sound_truehdbypass">Dolby TrueHD/DTS-HD</string>
+    <string name="str_sound_srs">SRS</string>
+
+    <string-array name="str_arr_sound_avc_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_sound_surround">Surround</string>
+
+    <string-array name="str_arr_sound_surround_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_sound_spdifoutput">SPDIF Output</string>
+
+    <string-array name="str_arr_sound_spdifoutput_vals">
+        <item>PCM</item>
+        <item>OFF</item>
+        <item>RAW</item>
+    </string-array>
+
+    <string name="str_sound_separatehear">Alone</string>
+
+    <string-array name="str_arr_sound_separatehear_vals">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+
+    <string name="str_set_switchmode">Switch Mode</string>
+    <string name="str_set_switchmode_blackscreen">Black Screen</string>
+    <string name="str_set_autosourceident">Source Identify</string>
+    <string name="str_set_sourcepreview">Source Preview</string>
+
+    <string-array name="str_arr_set_sourceidenttype">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+    <string-array name="str_arr_set_sourcepreviewtype">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string-array name="str_arr_set_hdmiarctype">
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string name="str_pic_colortemperature_red">Red</string>
+    <string name="str_pic_colortemperature_green">Green</string>
+    <string name="str_pic_colortemperature_blue">Blue</string>
+
+    <string name="str_pic_zoommode">Zoom Mode</string>
+
+    <string name="str_set_setting">Setting</string>
+    <string name="str_set_language">Language</string>
+    <string name="str_set_audio_language1">Audio Language</string>
+    <string name="str_set_audio_language2">2nd Audio Language</string>
+    <string name="str_set_subtitle_switch">Subtitle</string>
+    <string name="str_set_subtitle_language1">Subtitle Language</string>
+    <string name="str_set_subtitle_language2">2nd Subtitle Language</string>
+
+    <string name="str_pic_imgnoisereduction">Image Noise Reduction</string>
+    <string name="str_pic_mpegnoisereduction">MPEG Noise Reduction</string>
+    <string name="str_pic_xvycc">xvYCC</string>
+
+    <string name="str_set_language_czech">Czech</string>
+    <string name="str_set_language_danish">Danish</string>
+    <string name="str_set_language_german">German</string>
+    <string name="str_set_language_english">English</string>
+    <string name="str_set_language_spanish">Spanish</string>
+    <string name="str_set_language_greek">Greek</string>
+    <string name="str_set_language_french">French</string>
+    <string name="str_set_language_croatian">Croatian</string>
+    <string name="str_set_language_italian">Italian</string>
+    <string name="str_set_language_hungarian">Hungarian</string>
+    <string name="str_set_language_dutch">Dutch</string>
+    <string name="str_set_language_norwegian">Norwegian</string>
+    <string name="str_set_language_polish">Polish</string>
+    <string name="str_set_language_portuguese">Portuguese</string>
+    <string name="str_set_language_russian">Russian</string>
+    <string name="str_set_language_romanian">Romanian</string>
+    <string name="str_set_language_slovenian">Slovenian</string>
+    <string name="str_set_language_serbian">Serbian</string>
+    <string name="str_set_language_finnish">Finnish</string>
+    <string name="str_set_language_swedish">Swedish</string>
+    <string name="str_set_language_bulgarian">Bulgarian</string>
+    <string name="str_set_language_slovak">Slovak</string>
+    <string name="str_set_language_chinese">Chinese</string>
+    <string name="str_set_language_gaelic">Gaelic</string>
+    <string name="str_set_language_welsh">Welsh</string>
+    <string name="str_set_language_irish">Irish</string>
+    <string name="str_set_language_arabic">Arabic</string>
+    <string name="str_set_language_latvian">Latvian</string>
+    <string name="str_set_language_hebrew">Hebrew</string>
+    <string name="str_set_language_turkish">Turkish</string>
+    <string name="str_set_language_estonian">Estonian</string>
+    <string name="str_set_language_gallegan">Gallegan</string>
+    <string name="str_set_language_basque">Basque</string>
+    <string name="str_set_language_catalan">Catalan</string>
+    <string name="str_set_language_icelandic">Icelandic</string>
+    <string name="str_set_language_letzeburgesch">Letzeburgesch</string>
+    <string name="str_set_language_lithuanian">Lithuanian</string>
+    <string name="str_set_language_ukrainian">Ukrainian</string>
+    <string name="str_set_language_byelorussian">Byelorussian</string>
+    <string name="str_set_language_maori">Maori</string>
+    <string name="str_set_language_mandarin">Mandarin</string>
+    <string name="str_set_language_cantonese">Cantonese</string>
+    <string name="str_set_language_korean">Korean</string>
+    <string name="str_set_language_japanese">Japanese</string>
+    <string name="str_set_language_hindi">Hindi</string>
+    <string name="str_set_language_thai">Thai</string>
+    <string name="str_set_language_vietnamese">Vietnamese</string>
+
+
+    <string-array name="str_arr_set_default_language">
+        <item>@string/str_set_language_czech</item>
+        <item>@string/str_set_language_danish</item>
+        <item>@string/str_set_language_german</item>
+        <item>@string/str_set_language_english</item>
+        <item>@string/str_set_language_spanish</item>
+        <item>@string/str_set_language_greek</item>
+        <item>@string/str_set_language_french</item>
+        <item>@string/str_set_language_croatian</item>
+        <item>@string/str_set_language_italian</item>
+        <item>@string/str_set_language_hungarian</item>
+        <item>@string/str_set_language_dutch</item>
+        <item>@string/str_set_language_norwegian</item>
+        <item>@string/str_set_language_polish</item>
+        <item>@string/str_set_language_portuguese</item>
+        <item>@string/str_set_language_russian</item>
+        <item>@string/str_set_language_romanian</item>
+        <item>@string/str_set_language_slovenian</item>
+        <item>@string/str_set_language_serbian</item>
+        <item>@string/str_set_language_finnish</item>
+        <item>@string/str_set_language_swedish</item>
+        <item>@string/str_set_language_bulgarian</item>
+        <item>@string/str_set_language_slovak</item>
+        <item>@string/str_set_language_chinese</item>
+        <item>@string/str_set_language_gaelic</item>
+        <item>@string/str_set_language_welsh</item>
+        <item>@string/str_set_language_irish</item>
+        <item>@string/str_set_language_arabic</item>
+        <item>@string/str_set_language_latvian</item>
+        <item>@string/str_set_language_hebrew</item>
+        <item>@string/str_set_language_turkish</item>
+        <item>@string/str_set_language_estonian</item>
+        <item>@string/str_set_language_gallegan</item>
+        <item>@string/str_set_language_basque</item>
+        <item>@string/str_set_language_catalan</item>
+        <item>@string/str_set_language_icelandic</item>
+        <item>@string/str_set_language_letzeburgesch</item>
+        <item>@string/str_set_language_lithuanian</item>
+        <item>@string/str_set_language_ukrainian</item>
+        <item>@string/str_set_language_byelorussian</item>
+        <item>@string/str_set_language_maori</item>
+        <item>@string/str_set_language_mandarin</item>
+        <item>@string/str_set_language_cantonese</item>
+        <item>@string/str_set_language_korean</item>
+        <item>@string/str_set_language_japanese</item>
+        <item>@string/str_set_language_hindi</item>
+        <item>@string/str_set_language_thai</item>
+        <item>@string/str_set_language_vietnamese</item>
+    </string-array>
+
+    <string name="str_set_menutime">Menu Time</string>
+    <string name="str_set_menutime_5sec">5 Seconds</string>
+    <string name="str_set_hdmicec">HDMI_CEC</string>
+    <string name="str_set_standyon">System Standby</string>
+
+    <string name="str_set_powersetting">Power Setting</string>
+    <string name="str_set_restoretodefault">Restore To Default</string>
+    <string name="str_set_hdmicec_label">HDMI_CEC</string>
+    <string name="str_set_hdmicec_devicelist">Device List</string>
+    <string name="str_set_hdmicec_off">Off</string>
+    <string name="str_set_hdmicec_onoff">HDMI CEC On/Off</string>
+    <string name="str_set_cc_setting">CC Setting</string>
+    <string name="str_set_on">On</string>
+    <string name="str_set_colorrange">Color Range</string>
+    <string name="str_set_colorrange_0to255">0~255</string>
+    <string name="str_set_moviemode">Movie Mode</string>
+    <string name="str_hdmi_edid_version">HDMI EDID Version</string>
+    <string name="str_set_bluescreenswitch">Blue Screen</string>
+    <string name="str_pvr_file_system_title">PVR File System</string>
+    <string name="str_set_hbbtv_switch">HBBTV</string>
+    <string name="str_set_autosourceswit">Source auto switch</string>
+    <string name="str_set_mhlswitch">MHL Auto Switch</string>
+
+
+
+</resources>

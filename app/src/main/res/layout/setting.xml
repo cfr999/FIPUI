@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    <MStar Software>
+    ******************************************************************************
+     MStar Software
+     Copyright (c) 2010 - 2013 MStar Semiconductor, Inc. All rights reserved.
+     All software, firmware and related documentation herein ("MStar Software") are
+     intellectual property of MStar Semiconductor, Inc. ("MStar") and protected by
+     law, including, but not limited to, copyright law and international treaties.
+     Any use, modification, reproduction, retransmission, or republication of all
+     or part of MStar Software is expressly prohibited, unless prior written
+     permission has been granted by MStar.
+
+     By accessing, browsing and/or using MStar Software, you acknowledge that you
+     have read, understood, and agree, to be bound by below terms ("Terms") and to
+     comply with all applicable laws and regulations:
+
+     1. MStar shall retain any and all right, ownership and interest to MStar
+        Software and any modification/derivatives thereof.
+        No right, ownership, or interest to MStar Software and any
+        modification/derivatives thereof is transferred to you under Terms.
+
+     2. You understand that MStar Software might include, incorporate or be
+        supplied together with third party's software and the use of MStar
+        Software may require additional licenses from third parties.
+        Therefore, you hereby agree it is your sole responsibility to separately
+        obtain any and all third party right and license necessary for your use of
+        such third party's software.
+
+     3. MStar Software and any modification/derivatives thereof shall be deemed as
+        MStar's confidential information and you agree to keep MStar's
+        confidential information in strictest confidence and not disclose to any
+        third party.
+
+     4. MStar Software is provided on an "AS IS" basis without warranties of any
+        kind. Any warranties are hereby expressly disclaimed by MStar, including
+        without limitation, any warranties of merchantability, non-infringement of
+        intellectual property rights, fitness for a particular purpose, error free
+        and in conformity with any international standard.  You agree to waive any
+        claim against MStar for any loss, damage, cost or expense that you may
+        incur related to your use of MStar Software.
+        In no event shall MStar be liable for any direct, indirect, incidental or
+        consequential damages, including without limitation, lost of profit or
+        revenues, lost or damage of data, and unauthorized system use.
+        You agree that this Section 4 shall still apply without being affected
+        even if MStar Software has been modified by MStar in accordance with your
+        request or instruction for your use, except otherwise agreed by both
+        parties in writing.
+
+     5. If requested, MStar may from time to time provide technical supports or
+        services in relation with MStar Software to you for your use of
+        MStar Software in conjunction with your or your customer's product
+        ("Services").
+        You understand and agree that, except otherwise agreed by both parties in
+        writing, Services are provided on an "AS IS" basis and the warranty
+        disclaimer set forth in Section 4 above shall apply.
+
+     6. Nothing contained herein shall be construed as by implication, estoppels
+        or otherwise:
+        (a) conferring any license or right to use MStar name, trademark, service
+            mark, symbol or any other identification;
+        (b) obligating MStar or any of its affiliates to furnish any person,
+            including without limitation, you and your customers, any assistance
+            of any kind whatsoever, or any information; or
+        (c) conferring any license or right under any intellectual property right.
+
+     7. These terms shall be governed by and construed in accordance with the laws
+        of Taiwan, R.O.C., excluding its conflict of law rules.
+        Any and all dispute arising out hereof or related hereto shall be finally
+        settled by arbitration referred to the Chinese Arbitration Association,
+        Taipei in accordance with the ROC Arbitration Law and the Arbitration
+        Rules of the Association by three (3) arbitrators appointed in accordance
+        with the said Rules.
+        The place of arbitration shall be in Taipei, Taiwan and the language shall
+        be English.
+        The arbitration award shall be final and binding to both parties.
+
+    ******************************************************************************
+    <MStar Software>
+-->          
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/pic_mode_sty_menu">
+    <include layout="@layout/layout_icon_bar_settings" />
+    <com.kjd.flbui.ui.CycleScrollView
+        android:orientation="vertical"
+        android:layout_width="720dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp">
+        <LinearLayout
+            android:id="@+id/linearlayout_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">   
+            <!-- For Language -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_language"
+				style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_language"
+                    android:text="@string/str_set_language"
+                    style="@style/pic_mode_sty_combo_name"/>
+                <TextView
+                    android:id="@+id/textview_set_language_val"
+                    android:text="@string/str_set_language_english"
+ 					style="@style/pic_mode_sty_combo_indicator"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For Audio Primary Language -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_audio_language1"
+                style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView  style="@style/pic_mode_sty_leftarrow"> </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_audio_language1"
+					style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_audio_language1"/>
+                <TextView
+                    android:id="@+id/textview_set_audio_language1_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_language_english"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow"> </ImageView>
+            </LinearLayout>
+
+            <!-- For Audio Secondary Language -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_audio_language2"
+                style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_audio_language2"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_audio_language2"/>
+                <TextView
+                    android:id="@+id/textview_set_audio_language2_val"
+					style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_language_english"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow"> </ImageView>
+            </LinearLayout>
+
+            <!-- For Subtitle ON/OFF -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_subtitle_switch"
+                style="@style/pic_mode_sty_combo_btn"
+                android:visibility="gone">
+                <ImageView  style="@style/pic_mode_sty_leftarrow"> </ImageView>
+                <TextView
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_subtitle_switch" />
+                <TextView style="@style/pic_mode_sty_combo_indicator"/>
+                <ImageView style="@style/menu_vchip_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+
+            <!-- For Subtitle Primary Language -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_subtitle_language1"
+				style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_subtitle_language1"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_subtitle_language1"/>
+                <TextView
+                    android:id="@+id/textview_set_subtitle_language1_val"
+					style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_language_english"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow"> </ImageView>
+            </LinearLayout>
+
+            <!-- For Subtitle Secondary Language -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_subtitle_language2"
+				style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_subtitle_language2"
+					style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_subtitle_language2"/>
+                <TextView
+                    android:id="@+id/textview_set_subtitle_language2_val"
+					style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_language_english"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For Menu Keeping Time -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_menutime"
+				style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow"> </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_menutime"
+					style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_menutime"/>
+                <TextView
+                    android:id="@+id/textview_set_menutime_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_menutime_5sec"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For Switch Mode -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_switchmode"
+                style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_switchmode"
+					style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_switchmode"/>
+                <TextView
+                    android:id="@+id/textview_set_switchmode_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_switchmode_blackscreen"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow"> </ImageView>
+            </LinearLayout>
+            <!-- For source identification -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_autosourceident"
+				style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_autosourceident"
+					style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_autosourceident"/>
+                <TextView
+                    android:id="@+id/textview_set_autosourceident_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+
+            <!-- For source preview -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_sourcepreview"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_sourcepreview"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_sourcepreview"/>
+                <TextView
+                    android:id="@+id/textview_set_sourcepreview_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For source auto switch -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_autosourceswit"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_autosourceswit"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_autosourceswit"/>
+                <TextView
+                    android:id="@+id/textview_set_autosourceswit_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For PVR File System -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_pvrfs"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state">
+                <TextView
+                    android:layout_width="300dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_pvr_file_system_title"
+                    android:textColor="#ffffff"
+                    android:textSize="23dip"
+                    android:layout_marginLeft="27dip" />
+            </LinearLayout>
+            <!-- For Color Range -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_colorrange"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_colorrange"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_colorrange"/>
+                <TextView
+                    android:id="@+id/textview_set_colorrange_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_colorrange_0to255"/>
+                <ImageView style="@style/pic_mode_sty_rightarrow"> </ImageView>
+            </LinearLayout>
+            <!-- For MHL Auto Switch -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_mhlswitch"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView style="@style/pic_mode_sty_leftarrow"> </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_mhlswitch"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_mhlswitch"/>
+                <TextView
+                    android:id="@+id/textview_set_mhlswitch_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow"> </ImageView>
+            </LinearLayout>
+            <!-- For Movie Mode -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_moviemode"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_moviemode"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_moviemode"/>
+                <TextView
+                    android:id="@+id/textview_set_moviemode_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For Blue Screen Switch -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_bluescreenswitch"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_bluescreenswitch"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_bluescreenswitch"/>
+                <TextView
+                    android:id="@+id/textview_set_bluescreenswitch_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView style="@style/pic_mode_sty_rightarrow"> </ImageView>
+            </LinearLayout>
+            <!-- For HDMI CEC -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_hdmicec"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_hdmicec"
+                    style="@style/pic_mode_sty_combo_name"
+                    android:text="@string/str_set_hdmicec"/>
+                <TextView
+                    android:id="@+id/textview_set_hdmicec_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For HDMI ARC -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_hdmiarc"
+                style="@style/pic_mode_sty_combo_btn"
+                android:background="@drawable/button_state"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="gone">
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_hdmiarc"
+					style="@style/pic_mode_sty_combo_name"            
+					android:text="@string/str_set_hdmicec_arc"/>
+                <TextView
+                    android:id="@+id/textview_set_hdmiarc_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For Standy On -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_standyon"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:visibility="gone">
+                <ImageView style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_set_standyon"
+                    style="@style/pic_mode_sty_combo_name"  
+                    android:text="@string/str_set_standyon"/>
+                <TextView
+                    android:id="@+id/textview_set_standyon_val"
+                    style="@style/pic_mode_sty_combo_indicator"
+                    android:text="@string/str_set_off"/>
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+            <!-- For CEC List -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_cec_list"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/textview_set_cec_list"
+                    android:layout_width="300dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_set_hdmicec_devicelist"
+                    android:textColor="#ffffff"
+                    android:textSize="23dip"/>
+            </LinearLayout>
+
+            <!-- For HDMI EDID Version -->
+            <LinearLayout
+                android:id="@+id/linearlayout_hdmi_edid_version"
+                style="@style/pic_mode_sty_combo_btn"
+                android:visibility="visible" >
+                <ImageView
+                    style="@style/pic_mode_sty_leftarrow">
+                </ImageView>
+                <TextView
+                    android:id="@+id/textview_hdmi_edid_version"
+                    style="@style/pic_mode_sty_combo_name" 
+                    android:text="@string/str_hdmi_edid_version" />
+                <TextView
+                    android:id="@+id/textview_hdmi_edid_version_val"
+                    style="@style/pic_mode_sty_combo_indicator" />
+                <ImageView
+                    style="@style/pic_mode_sty_rightarrow">
+                </ImageView>
+            </LinearLayout>
+
+                        <!-- For Power Setting -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_powersetting"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/textview_set_powersetting"
+                    android:layout_width="300dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_set_powersetting"
+                    android:textColor="#ffffff"
+                    android:textSize="23dip"/>
+            </LinearLayout>
+            <!-- For HBBTv ON/OFF -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_hbbtv_switch"
+                style="@style/pic_mode_sty_combo_btn"
+                android:visibility="visible" >
+                <ImageView style="@style/pic_mode_sty_leftarrow" >
+                </ImageView>
+                <TextView
+                    style="@style/pic_mode_sty_combo_name" 
+                    android:text="@string/str_set_hbbtv_switch" />
+                <TextView style="@style/pic_mode_sty_combo_indicator" />
+                <ImageView  style="@style/pic_mode_sty_rightarrow" >
+                </ImageView>
+            </LinearLayout>
+            <!-- For Restore To Default -->
+            <LinearLayout
+                android:id="@+id/linearlayout_set_restoretodefault"
+                style="@style/pic_mode_sty_combo_btn"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/button_state"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/textview_set_restoretodefault"
+                    android:layout_width="300dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/str_set_restoretodefault"
+                    android:textColor="#ffffff"
+                    android:textSize="23dip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.kjd.flbui.ui.CycleScrollView>
+</LinearLayout>

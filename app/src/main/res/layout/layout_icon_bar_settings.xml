@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="1100dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+    
+<com.kjd.flbui.ui.ImgTextButton
+   android:id="@+id/btSource_settings"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:layout_weight="1"
+   android:gravity="center_horizontal|center_vertical"
+  />
+<com.kjd.flbui.ui.ImgTextButton
+   android:id="@+id/btPicture_settings"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:layout_weight="1"
+   android:gravity="center_horizontal|center_vertical"
+  />
+<com.kjd.flbui.ui.ImgTextButton
+   android:id="@+id/btSound_settings"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:layout_weight="1"
+   android:gravity="center_horizontal|center_vertical"
+  />
+<com.kjd.flbui.ui.ImgTextButton
+   android:id="@+id/btchannel_settings"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:layout_weight="1"
+   android:gravity="center_horizontal|center_vertical"
+  />
+<com.kjd.flbui.ui.ImgTextButton
+   android:id="@+id/btSetting_settings"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:layout_weight="1"
+   android:gravity="center_horizontal|center_vertical"
+  />
+</LinearLayout>
