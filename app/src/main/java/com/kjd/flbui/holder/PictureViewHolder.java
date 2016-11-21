@@ -105,10 +105,6 @@ public class PictureViewHolder {
     protected static final int STEP = 1;
     protected static final String TAG = "PictureViewHolder";
     protected ProgressDialog progressDialog;
-
-
-
-
     protected LinearLayout layoutMenu;
 
     protected Activity activity;
@@ -135,37 +131,40 @@ public class PictureViewHolder {
     public void findViews() {
         layoutMenu = (LinearLayout) activity
                 .findViewById(R.id.linearlayout_pic_menu);
-        btSource=(ImgTextButton)activity.findViewById(R.id.btSource_picture);
-        btSource.setImgResource(R.mipmap.source);
-        btSource.setText(R.string.str_input_source_title);
-          btSource.setFocusable(false);   
-        
+//        btSource=(ImgTextButton)activity.findViewById(R.id.btSource_picture);
+//        btSource.setImgResource(R.mipmap.source);
+//        btSource.setText(R.string.str_input_source_title);
+//          btSource.setFocusable(false);
         btPicture=(ImgTextButton)activity.findViewById(R.id.btPicture_picture);
-        btPicture.setImgResource(R.mipmap.picture);
+//        btPicture.setImgResource(R.mipmap.picture);
+        btPicture.setImgResource(R.mipmap.picture_setting);
         btPicture.setText(R.string.str_pic_picture);
-        btPicture.setBackgroundResource(R.mipmap.menu_icon_select);
+        btPicture.setBackgroundResource(R.mipmap.background);
           btPicture.setFocusable(false);   
         
         btSound=(ImgTextButton)activity.findViewById(R.id.btSound_picture);
-        btSound.setImgResource(R.mipmap.sound);
+//        btSound.setImgResource(R.mipmap.sound);
+        btSound.setImgResource(R.mipmap.sound_setting);
         btSound.setText(R.string.str_sound_sound_adjustment);
         //btSound.setBackgroundResource(R.mipmap.menu_icon_select);
 
           btSound.setFocusable(false);   
         
         btChannel=(ImgTextButton)activity.findViewById(R.id.btchannel_picture);
-        btChannel.setImgResource(R.mipmap.channel);
-        btChannel.setText(R.string.str_cha_channel);
+//        btChannel.setImgResource(R.mipmap.channel);
+        btChannel.setImgResource(R.mipmap.detail_setting1);
+//        btChannel.setText(R.string.str_cha_channel);
+        btChannel.setText(R.string.str_pic_detail_setting1);
         //btChannel.setBackgroundResource(R.mipmap.menu_icon_select);;
-
-          btChannel.setFocusable(false);   
+        btChannel.setFocusable(false);
         
         btSetting=(ImgTextButton)activity.findViewById(R.id.btSetting_picture);
-        btSetting.setImgResource(R.mipmap.setting);
-        btSetting.setText(R.string.str_set_setting);
+//        btSetting.setImgResource(R.mipmap.setting);
+//        btSetting.setText(R.string.str_set_setting);
+        btSetting.setImgResource(R.mipmap.detail_setting2);
+        btSetting.setText(R.string.str_pic_detail_setting2);
         //btSetting.setBackgroundResource(R.mipmap.menu_icon_select);
-
-           btSetting.setFocusable(false);   
+        btSetting.setFocusable(false);
 
     }
 

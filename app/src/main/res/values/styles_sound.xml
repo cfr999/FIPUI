@@ -33,6 +33,7 @@
     	<item name="android:textSize">23dip</item>
     	<item name="android:gravity">center</item>
     	<item name="android:layout_marginLeft">20dip</item>
+		<item name="android:drawableBottom">@mipmap/long_line</item>
     </style>
     <!-- seekbar button -->
     <style name="sound_sty_seekbar_btn">
@@ -61,6 +62,7 @@
     	<item name="android:textSize">23dip</item>
     	<item name="android:textColor">#FFFFFF</item>
     	<item name="android:layout_marginLeft">60dip</item>
+	    <item name="android:drawableBottom">@mipmap/short_line</item>
    </style>
    <style name="sound_sty_seekbar_indicator">
    		<item name="android:layout_width">50dip</item>

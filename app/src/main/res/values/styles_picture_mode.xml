@@ -85,12 +85,12 @@
         <item name="android:layout_height">1000dip</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:background">@drawable/picture_mode_img_bg</item>
+        <item name="android:background">@color/background</item>
     </style>
 
     <!-- combo button -->
     <style name="pic_mode_sty_combo_btn">
-        <item name="android:layout_width">700dip</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">50dip</item>
         <item name="android:background">@drawable/pic_mode_focus_state</item>
         <item name="android:orientation">horizontal</item>
@@ -105,22 +105,25 @@
         <item name="android:textSize">23dip</item>
         <item name="android:gravity">left</item>
         <item name="android:layout_marginLeft">60dip</item>
+        <item name="android:drawableBottom">@mipmap/short_line</item>
     </style>
     <style name="pic_mode_sty_combo_name1">
-        <item name="android:layout_width">300dip</item>
+        <item name="android:layout_width">200dip</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">23dip</item>
         <item name="android:gravity">left</item>
         <item name="android:layout_marginLeft">60dip</item>
+        <item name="android:drawableBottom">@mipmap/short_line</item>
     </style>
     <style name="pic_mode_sty_combo_indicator">
         <item name="android:layout_width">300dip</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">23dip</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:drawableBottom">@mipmap/long_line</item>
     </style>
     <!-- seekbar button -->
     <style name="pic_mode_sty_seekbar_btn">
@@ -129,7 +132,7 @@
         <item name="android:background">@drawable/pic_mode_focus_state</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:focusable">true</item>
-        <item name="android:layout_marginBottom">0dip</item>
+        <item name="android:layout_marginBottom">8dip</item>
     </style>
     <style name="pic_mode_sty_bar">
         <item name="android:layout_width">300dip</item>
@@ -160,6 +163,7 @@
         <item name="android:textSize">23dip</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:layout_marginLeft">60dip</item>
+        <item name="android:drawableBottom">@mipmap/short_line</item>
     </style>
     <style name="pic_mode_sty_seekbar_indicator">
         <item name="android:layout_width">50dip</item>
@@ -247,5 +251,16 @@
         <item name="android:layout_marginLeft">40dip</item>
         <item name="android:background">@drawable/common_img_arrow_r</item>
         <item name="android:visibility">gone</item>
+    </style>
+
+    <!--TextView-->
+    <style name="pic_textView_indicator">
+        <item name="android:layout_width">300dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pic_mode_focus_state</item>
+        <item name="android:textSize">23dip</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
 </resources>
